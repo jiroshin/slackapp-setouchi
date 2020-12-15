@@ -21,7 +21,7 @@ const reactionMap = {
   manabi: ":manabi:",
   memo: ":memo:",
   pr: ":pr:",
-  end: ":otukare"
+  end: ":otsukare:"
 }
 
 export {

@@ -31,8 +31,8 @@ const getProgress = (): progress => {
       continue;
     }
     for (let key in reactionMap) {
-      if (msg.text.includes(key)) {
-        progress['${key}'].push(msg.text.replace(`/${reactionMap[key]}/g`, ''))
+      if (msg.text.includes(reactionMap[key])) {
+        progress[key].push(msg.text.replace(`${reactionMap[key]}`, ''))
       }
     }
   }
