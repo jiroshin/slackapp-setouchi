@@ -1,0 +1,25 @@
+{
+  "name": "slackapp-setouchi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jiroshin/slackapp-setouchi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jiroshin/slackapp-setouchi/issues"
+  },
+  "homepage": "https://github.com/jiroshin/slackapp-setouchi#readme",
+  "devDependencies": {
+    "@google/clasp": "^2.3.0",
+    "@types/google-apps-script": "^1.0.20"
+  },
+  "dependencies": {}
+}
