@@ -38,29 +38,27 @@ const genScrumMessage = (progress:progress): string => {
       progress.pr.length == 0
      ) { return "" }
 
-  let doing = progress.doing.join(' と ')
-  let done = progress.done.join(' と ')
+  let doing = progress.doing.join('\n- ')
+  let done = progress.done.join('\n- ')
   let doneNum = progress.done.length
-  let manabi = progress.manabi.join(' と ')
-  let manabiNum = progress.manabi.length
   let memo = progress.memo.join('\n- ')
   let memoNum = progress.memo.length
 
   let msg = ""
-  if (doneNum > 0 && manabiNum > 0) {
-    msg = `|ω・）3 チラッ！ もうすぐDSだよ！！
-今日のDSではこれを言えば良さそう
-(^o^)/ < 今日は「${doing}」をやってました。「${done}」は終わったので良かったです。あ、そういえば今日は「${manabi}」という学びもありました！
-`
-  } else if (doneNum > 0) {
-    msg = `|ω・）3 チラッ！ もうすぐDSだよ〜〜
-今日のDSではこれ言っとこう!
-(-o-)/ < 今日は「${doing}」をやってました。「${done}」は終わったので良かったです。
+  if (doneNum > 0) {
+    msg = `|ω・）3 チラッ！中間報告だよ！
+やっていたこと
+- ${doing}
+
+完了したこと
+- ${done}
+
 `
   } else {
-    msg = `|ω・）3 チラッ！ もうすぐDSだよ〜
-今日のDSではこれ言っとこう!
-(-m-)/ < 今日は「${doing}」をやってました。
+    msg = `|ω・）3 チラッ！中間報告だよ！
+やっていたこと
+- ${doing}
+
 `
   }
 
