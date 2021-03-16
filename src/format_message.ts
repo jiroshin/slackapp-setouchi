@@ -48,24 +48,30 @@ const genScrumMessage = (progress:progress): string => {
   if (doneNum > 0) {
     msg = `|ω・）3 チラッ！中間報告だよ！
 やっていたこと
+\`\`\`
 - ${doing}
+\`\`\`
 
 完了したこと
+\`\`\`
 - ${done}
-
+\`\`\`
 `
   } else {
     msg = `|ω・）3 チラッ！中間報告だよ！
 やっていたこと
+\`\`\`
 - ${doing}
-
+\`\`\`
 `
   }
 
   if (memoNum > 0) {
     msg = msg + `
-↓これも必要あれば言っとこう。
+今日ここまでのメモ
+\`\`\`
 - ${memo}
+\`\`\`
 `
   }
 
