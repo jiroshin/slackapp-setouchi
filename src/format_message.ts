@@ -41,8 +41,6 @@ const genScrumMessage = (progress:progress): string => {
   let doing = progress.doing.join('\n- ')
   let done = progress.done.join('\n- ')
   let doneNum = progress.done.length
-  let memo = progress.memo.join('\n- ')
-  let memoNum = progress.memo.length
 
   let msg = ""
   if (doneNum > 0) {
@@ -52,29 +50,17 @@ const genScrumMessage = (progress:progress): string => {
 - ${doing}
 \`\`\`
 
-完了したこと
+今日これまでに完了したこと
 \`\`\`
 - ${done}
-\`\`\`
-`
+\`\`\``
   } else {
     msg = `|ω・）3 チラッ！中間報告だよ！
 やっていたこと
 \`\`\`
 - ${doing}
-\`\`\`
-`
+\`\`\``
   }
-
-  if (memoNum > 0) {
-    msg = msg + `
-今日ここまでのメモ
-\`\`\`
-- ${memo}
-\`\`\`
-`
-  }
-
   return msg
 }
 
