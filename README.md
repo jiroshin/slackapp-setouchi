@@ -3,9 +3,9 @@
 ガオガオッ！ガブッ！セトウチさん(SlackApp)の本体。  
 セトウチさんはGoogle Apps Scriptで動きます。
 
-# やってくれること
-### Slackへ実況投稿
-『やっていること,やったこと,プルリクエスト,学び,メモ』をオンタイムでSlackに投稿します。  
+# セトウチさんができること
+### まずは自分がSlackへ実況投稿
+自分が『やっていること,やったこと,プルリクエスト,学び,メモ』をオンタイムでSlackに投稿します。  
 ※投稿に使うSlackリアクションは`src/config.ts`でカスタマイズできます。  
 ![image-post](https://github.com/jiroshin/slackapp-setouchi/blob/master/post-example.png?raw=true)  
 
