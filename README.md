@@ -9,14 +9,13 @@
 ※投稿に使うSlackリアクションは`src/config.ts`でカスタマイズできます。  
 ![image-post](https://github.com/jiroshin/slackapp-setouchi/blob/master/post-example.png?raw=true)  
 
-### セトウチさんがデイリースクラム前に進捗コメントを考えてくれる
-するとセトウチさんがデイリースクラムの前に今日の進捗コメントを考えてくれます。  
-![image-daily-scrum-report](https://github.com/jiroshin/slackapp-setouchi/blob/master/daily-scrum-report.png?raw=true)  
+### 中間報告
+トリガーを設定した任意の時間に今日の作業の中間報告をしてくれます。  
 
-### セトウチさんがデイリーレポートと月間ログをまとめてくれる
+### デイリーレポートと月間ログ
 1日の最後にはその日のまとめをデイリーレポートとして報告してくれます。  
 ![image-daily-report](https://github.com/jiroshin/slackapp-setouchi/blob/master/daily-report.png?raw=true)  
-デイリーレポートは毎日Google Spread Sheet(月間ログ)に追記してくれるので過去のデイリーレポートも管理することができます。
+デイリーレポートは毎日SpreadSheet(月間ログ)に追記してくれるので過去のデイリーレポートも管理することができます。
 ![image-monthly-log](https://github.com/jiroshin/slackapp-setouchi/blob/master/monthly-log.png?raw=true)  
 
 # 使い方
@@ -51,6 +50,10 @@ $ npm install -D @google/clasp @types/google-apps-script
 ```
 $ export $GAS_ID={GASのスクリプトID} && make gas-deploy
 ```
+
+GASのスクリプトIDはGASエディターを開いた時のURLから確認できます。  
+`https://script.google.com/home/projects/xxxxxxxxxxxxxxxxx/edit`
+「xxxxxxxxxxxxxxxxx」の部分がスクリプトIDです。  
 
 ## 3. Google Apps Scriptのプロパティに値を設定する
 GASのプロパティに以下の値をそれぞれセットして下さい。

@@ -15,7 +15,7 @@ const genDailyReportMessage = (progress:progress): string => {
   let memo = progress.memo.join('\n- ')
   let prs = progress.pr.join('\n- ')
 
-  return `うぉおお！ガブッ！デイリーレポートの時間だよ (･ω･っ)З
+  return `デイリーレポートの時間だよ！
 ${reactionMap.doing} 今日進めたタスク
 - ${doing}
 ${reactionMap.done}今日完了したタスク
@@ -44,7 +44,7 @@ const genScrumMessage = (progress:progress): string => {
 
   let msg = ""
   if (doneNum > 0) {
-    msg = `|ω・）3 チラッ！中間報告だよ！
+    msg = `中間報告だよ！
 やっていたこと
 \`\`\`
 - ${doing}
@@ -55,7 +55,7 @@ const genScrumMessage = (progress:progress): string => {
 - ${done}
 \`\`\``
   } else {
-    msg = `|ω・）3 チラッ！中間報告だよ！
+    msg = `中間報告だよ！
 やっていたこと
 \`\`\`
 - ${doing}

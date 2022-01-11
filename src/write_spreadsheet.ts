@@ -23,9 +23,8 @@ const writeSpreadSheetLog = (progress: progress):void => {
     sheet.getRange(1, lastColumn+1).setValue(targetColumnName);
     sheet.getRange(2, lastColumn+1).setValue(log);
     const shareUrl = config.GOOGLE_SPREAD_SHEET_SHARING_URL
-    sendMessage(`月間ログも追記しておいたよ！^m^)/
+    sendMessage(`月間ログも追記しておいたよ！
 ${shareUrl}
-だれでも自由にコメントしてね！
 `);
     console.info("SUCCESS: writeSpreadSheetLog: " + `log[${log}]`)
   } catch (e) {
