@@ -32,6 +32,9 @@ const getProgress = (): progress => {
     }
     for (let key in reactionMap) {
       if (msg.text.includes(reactionMap[key])) {
+        if (key == "end") {
+          continue;
+        }
         progress[key].push(msg.text.replace(`${reactionMap[key]}`, ''))
       }
     }
