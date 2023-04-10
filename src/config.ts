@@ -18,10 +18,10 @@ const config = {
 const reactionMap = {
   done: ":done:",
   doing: ":doing:",
-  manabi: ":manabi:",
+  manabi: ":pencil2:",
   memo: ":memo:",
   pr: ":pr:",
-  end: ":otsukare:"
+  end: ":tea:"
 }
 
 export {

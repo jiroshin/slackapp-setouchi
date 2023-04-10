@@ -15,18 +15,18 @@ const genDailyReportMessage = (progress:progress): string => {
   let memo = progress.memo.join('\n- ')
   let prs = progress.pr.join('\n- ')
 
-  return `デイリーレポートの時間だよ！
-${reactionMap.doing} 今日進めたタスク
+  return `デイリーレポートです。
+${reactionMap.doing} 進めたタスク
 - ${doing}
-${reactionMap.done}今日完了したタスク
+${reactionMap.done} 完了したタスク
 - ${done}
 ${reactionMap.pr} Pull Requests
 - ${prs}
-${reactionMap.manabi} 今日の学び
+${reactionMap.manabi} 学びや発見
 - ${manabi}
-${reactionMap.memo} メモ・リマインド・あしたのTodo
+${reactionMap.memo} メモ
 - ${memo}
-今日も一日 ${reactionMap.end} (･ω･っ)З
+今日も一日お疲れさまでした ${reactionMap.end}
 `
 }
 
@@ -44,7 +44,7 @@ const genScrumMessage = (progress:progress): string => {
 
   let msg = ""
   if (doneNum > 0) {
-    msg = `中間報告だよ！
+    msg = `中間報告です。
 やっていたこと
 \`\`\`
 - ${doing}
@@ -55,7 +55,7 @@ const genScrumMessage = (progress:progress): string => {
 - ${done}
 \`\`\``
   } else {
-    msg = `中間報告だよ！
+    msg = `中間報告です。
 やっていたこと
 \`\`\`
 - ${doing}
@@ -79,15 +79,15 @@ const genLog = (progress:progress): string => {
   let prs = progress.pr.join('\n- ')
 
   return `
-# 着手したタスク
+# 進めたタスク
 - ${doing}
 # 完了したタスク
 - ${done}
 # Pull Requests
 - ${prs}
-# 今日の学び
+# 学びや発見
 - ${manabi}
-# メモ・リマインド・あしたのTodo
+# メモ
 - ${memo}
 `
 }
