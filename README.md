@@ -48,7 +48,7 @@ $ npm install -D @google/clasp @types/google-apps-script
 
 いざ、デプロイ。
 ```
-$ export $GAS_ID={GASのスクリプトID} && make gas-deploy
+$ export GAS_ID={GASのスクリプトID} && make gas-deploy
 ```
 
 GASのスクリプトIDはGASエディターを開いた時のURLから確認できます。  

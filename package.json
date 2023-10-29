@@ -1,7 +1,7 @@
 {
   "name": "slackapp-setouchi",
   "version": "1.0.0",
-  "description": "",
+  "description": "<img align=\"right\" width=\"200\" src=\"https://github.com/jiroshin/slackapp-setouchi/blob/master/setouchi-image.png?raw=true\"> ガオガオッ！ガブッ！セトウチさん(SlackApp)の本体。   セトウチさんはGoogle Apps Scriptで動きます。",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,8 +18,7 @@
   },
   "homepage": "https://github.com/jiroshin/slackapp-setouchi#readme",
   "devDependencies": {
-    "@google/clasp": "^2.3.0",
-    "@types/google-apps-script": "^1.0.20"
-  },
-  "dependencies": {}
+    "@google/clasp": "^2.4.2",
+    "@types/google-apps-script": "^1.0.59"
+  }
 }
