@@ -20,7 +20,7 @@ ${reactionMap.doing} 進めたタスク
 - ${doing}
 ${reactionMap.done} 完了したタスク
 - ${done}
-${reactionMap.pr} Pull Requests
+${reactionMap.pr} プルリク 
 - ${prs}
 ${reactionMap.manabi} 学びや発見
 - ${manabi}
@@ -83,7 +83,7 @@ const genLog = (progress:progress): string => {
 - ${doing}
 # 完了したタスク
 - ${done}
-# Pull Requests
+# プルリク
 - ${prs}
 # 学びや発見
 - ${manabi}

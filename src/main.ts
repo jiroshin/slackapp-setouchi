@@ -2,6 +2,13 @@ import { getProgress } from './get_progress';
 import { genDailyReportMessage, genScrumMessage } from './format_message';
 import { sendMessage } from './send_message';
 import { writeSpreadSheetLog } from './write_spreadsheet';
+import {reactionMap} from './config';
+
+function initialize(): void {
+  console.info("START: INITIALIZE")
+  sendMessage(`Hi! ${reactionMap.end}`);
+  console.info("END: INITIALIZE")
+}
 
 function sendDailyReport(): void {
   console.info("START: sendDailyReport")
